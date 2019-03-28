@@ -36,26 +36,35 @@ if(isset($_POST['submit'])) {
 ?>
 
 
-<?php include "templates/header.php"; ?>  
+<?php include "templates/header.php"; ?> 
 
+<div class="container">
+<div class="row">
+    <h3 style="border:2px solid palevioletred;">Add Appointment Details</h3>
+    
+    
 <form method="post">
 
 <label for="beauty_appointment">beauty_appointment</label>
-<input type="text" name="beauty_appointment" id="beauty_appointment">
+<input type="text" name="beauty_appointment" id="beauty_appointment" class="u-full-width">
 
 <label for="appointment_date">appointment_date</label>
-<input type="text" name="appointment_date" id="appointment_date">
+<input type="text" name="appointment_date" id="appointment_date" class="u-full-width">
 
 <label for="cost">cost</label>
-<input type="text" name="cost" id="cost">
+<input type="text" name="cost" id="cost" class="u-full-width">
 
 <label for="location">location</label>
-<input type="text" name="location" id="location">
+<input type="text" name="location" id="location" class="u-full-width">
 
 <label for="contact_number">contact_number</label>
-<input type="text" name="contact_number" id="contact_number">
-<input type="submit" name="submit" id="submit">
+<input type="text" name="contact_number" id="contact_number" class="u-full-width">
+<input type="submit" name="submit" id="submit" class="button-primary">
 
 </form>
+    
+    </div>
+</div>
+
 
 <?php include "templates/footer.php"; ?>

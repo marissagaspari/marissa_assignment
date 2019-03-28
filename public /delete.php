@@ -52,8 +52,9 @@
 
 <?php include "templates/header.php"; ?>
 
-
-<h2>Results</h2>
+<div class="container">
+<div class="row">
+<h3 style="border:2px solid palevioletred;">Delete Appointments</h3>
 
 <!-- This is a loop, which will loop through each result in the array -->
 <?php foreach($result as $row) { ?>
@@ -74,6 +75,7 @@
 <?php }; //close the foreach
 ?>
 
-
+    </div>
+</div>
 
 <?php include "templates/footer.php"; ?>

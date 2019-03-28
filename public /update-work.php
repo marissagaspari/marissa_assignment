@@ -73,6 +73,9 @@
 
 <?php include "templates/header.php"; ?>
 
+<div class="container">
+<div class="row">
+
 <?php if (isset($_POST['submit']) && $statement) : ?>
 	<p>Work successfully updated.</p>
 <?php endif; ?>
@@ -94,7 +97,7 @@
     <input type="text" name="location" id="location" value="<?php echo escape($appointment['location']); ?>">
     
     <label for="contact_number">contact_number</label>
-    <input type="text" name="contact_number" id="contact_number" value="<?php echo escape($appointment['contact_number']); ?>">
+    <input type="text" name="contact_number" id="contact_number" value="<?php echo escape($appointment['contact_number']); ?>" >
 
     <input type="submit" name="submit" value="Save">
 
@@ -102,6 +105,7 @@
 
 
 
-
+    </div>
+</div>
 
 <?php include "templates/footer.php"; ?>
